@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/user', router);
+app.use('api/blog', blogRouter);
 
 mongoose.connect(process.env.MONGO_DB).then(()=> app.listen(process.env.PORT, ()=>{
   console.log('app is listening to localhost and the port number is', process.env.PORT)
