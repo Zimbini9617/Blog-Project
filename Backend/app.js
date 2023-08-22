@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import router from './route/Users-route.js';
-
+import blogRouter from './route/Blogs-route.js';
 dotenv.config();
 
 const app = express();
