@@ -12,10 +12,18 @@ const Header = () => {
      <Link to='/blogs'>Blogs</Link>
      <Link to='/user-blogs'>UserBlogs</Link>
      <Link to='/add-blog'>AddBlog</Link>
-     <button to='/auth' className='bg-neutral-400 px-4 py-2 rounded-full'>Login</button>
-     <button to='/auth'>Signup</button>
-     <button to='/auth'>Logout</button>
     </nav>
+    <div className='flex gap-2'>
+    <button className='bg-neutral-400 hover:bg-neutral-700 rounded-full px-4 py-2'>
+      <Link to='/auth'>Login</Link>
+    </button>
+    <button className='bg-neutral-400 hover:bg-neutral-700 rounded-full px-4 py-2'>
+      <Link to='/auth'>Signup</Link>
+    </button>
+     <button className='bg-neutral-400 hover:bg-neutral-700 rounded-full px-4 py-2'>
+      <Link to='/auth'>Logout</Link>
+    </button>
+    </div>
     </div>
   </header>
 }

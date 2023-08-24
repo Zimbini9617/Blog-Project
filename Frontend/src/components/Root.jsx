@@ -5,9 +5,9 @@ import Footer from './Footer';
 
 const Root = () => {
   return (
-    <div>
+    <div className='grid grid-rows-layout h-screen w-full'>
       <Header />
-      <main>
+      <main className='container mx-auto'>
         <Outlet />
       </main>
       <Footer />
