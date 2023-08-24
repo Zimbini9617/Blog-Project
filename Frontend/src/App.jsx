@@ -4,7 +4,10 @@ import Root from './components/Root';
 import ErrorPage from './error-page';
 import Home from './pages/Home';
 import Auth from './components/Auth';
-
+import Blogs from './components/Blogs';
+import BlogDetail from './components/BlogDetail';
+import UserBlogs from './components/UserBlogs';
+import AddBlog from './components/AddBlog';
 
 const router = createBrowserRouter([{
 element: <Root />,
@@ -15,31 +18,29 @@ children: [
    element: <Home /> 
   },
   {
-    path: '/',
-    element: <Home /> 
+    path: '/auth',
+    element: <Auth /> 
    },
    {
-    path: '/',
-    element: <Home /> 
+    path: '/blogs',
+    element: <Blogs /> 
    },
    {
-    path: '/',
-    element: <Home /> 
+    path: '/blog-detail/:id',
+    element: <BlogDetail /> 
    },
    {
-    path: '/',
-    element: <Home /> 
+    path: '/user-blogs',
+    element: <UserBlogs /> 
    },
    {
-    path: '/',
-    element: <Home /> 
+    path: '/add-blog',
+    element: <AddBlog /> 
    },
 ]
 }]);
 const App = () => {
-  return (
-    <div className='bg-blue-600'>App</div>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App
