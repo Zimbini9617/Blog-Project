@@ -8,6 +8,7 @@ import Blogs from './components/Blogs';
 import BlogDetail from './components/BlogDetail';
 import UserBlogs from './components/UserBlogs';
 import AddBlog from './components/AddBlog';
+import UpdateBlog from './components/UpdateBlog'
 
 const router = createBrowserRouter([{
 element: <Root />,
@@ -36,6 +37,10 @@ children: [
    {
     path: '/add-blog',
     element: <AddBlog /> 
+   },
+   {
+    path: '/update-blog',
+    element: <UpdateBlog /> 
    },
 ]
 }]);
