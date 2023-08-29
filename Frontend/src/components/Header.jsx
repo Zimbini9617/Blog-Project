@@ -9,7 +9,7 @@ console.log(isLoggedIn);
 const dispatch = useDispatch();
 
   return (
-  <header className='bg-fuchsia-500 text-white'>
+  <header className='bg-green-600 text-white'>
     <div className='container mx-auto flex justify-between items-center'>
     <h1 className='text-lg font-bold font-serif'>
       <Link to='/'>MYBLOG</Link>

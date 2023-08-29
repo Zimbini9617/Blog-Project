@@ -51,7 +51,7 @@ const Auth = () => {
     }
   };
   return (
-    <div className="w-full h-full flex items-center justify-center bg-gray-50">
+    <div className="w-94 h-full flex items-center rounded-lg justify-center bg-gray-200">
       <div className="max-w-md w-full mx-auto">
         <div>
           <h2 className="mt-6 text-center text-3xl font-semibold text-gray-900">
@@ -87,7 +87,7 @@ const Auth = () => {
                 required
                 value={user.email}
                 onChange={handleChange}
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
               />
             </div>
             <div>
@@ -100,7 +100,7 @@ const Auth = () => {
                 required
                 value={user.password}
                 onChange={handleChange}
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
+                className="appearance-none rounded-lg relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
               />
             </div>
             <div>
@@ -119,7 +119,7 @@ const Auth = () => {
               >
                 {isSignup
                   ? 'Already have an account? Login'
-                  : "Don't have an account? Sing up"}
+                  : "Don't have an account? Sign up"}
               </button>
             </div>
           </div>
