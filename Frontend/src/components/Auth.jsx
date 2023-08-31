@@ -51,11 +51,11 @@ const Auth = () => {
     }
   };
   return (
-    <div className="w-94 h-full flex items-center rounded-lg justify-center bg-gray-200">
+    <div className="w-full h-full flex items-center justify-center rounded-lg bg-gray-100">
       <div className="max-w-md w-full mx-auto">
         <div>
           <h2 className="mt-6 text-center text-3xl font-semibold text-gray-900">
-            {isSignup ? 'Sing up' : 'Log in'}
+            {isSignup ? 'Sign up' : 'Log in'}
           </h2>
         </div>
         <form className="mt-6 space-y-6" onSubmit={handleSubmit}>
@@ -71,7 +71,7 @@ const Auth = () => {
                   required
                   value={user.name}
                   onChange={handleChange}
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
+                  className="appearance-none rounded relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
                 />
               </div>
             ) : (
@@ -87,7 +87,7 @@ const Auth = () => {
                 required
                 value={user.email}
                 onChange={handleChange}
-                className="appearance-none rounded-lg relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
+                className="appearance-none rounded relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
               />
             </div>
             <div>
@@ -100,7 +100,7 @@ const Auth = () => {
                 required
                 value={user.password}
                 onChange={handleChange}
-                className="appearance-none rounded-lg relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
+                className="appearance-none rounded relative block w-full px-3 py-2 border text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-lg"
               />
             </div>
             <div>

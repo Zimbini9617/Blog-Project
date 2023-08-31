@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const BlogDetail = () => {
   return (
@@ -6,4 +6,4 @@ const BlogDetail = () => {
   )
 }
 
-export default BlogDetail
+export default BlogDetail;
