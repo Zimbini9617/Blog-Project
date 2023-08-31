@@ -1,9 +1,9 @@
 import express from 'express';
-import { getAlluser, login, signup } from '../controller/Users-controller.js';
+import { getAllUser, login, signup } from '../controller/users-controller';
 
-const router = express.Router();
+const router = express.Router(); //GET, POST, PUT, DELETE
 
-router.get('/', getAlluser);
+router.get('/', getAllUser);
 router.post('/signup', signup);
 router.post('/login', login);
 
